@@ -17,7 +17,7 @@ public class SpringbootDockerAwsEcsApplication {
     @Autowired
     private OrderDao orderDao;
 
-    @GetMapping
+    @GetMapping("/getOrders")
     public List<Order> getOrders() {
         return orderDao.getOrders();
     }
