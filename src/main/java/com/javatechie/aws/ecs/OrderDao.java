@@ -1,8 +1,10 @@
 package com.javatechie.aws.ecs;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.Arrays;
 import java.util.List;
-
+@Repository
 public class OrderDao {
 
     public List<Order> getOrders(){
